@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería</title>
+    <link rel="stylesheet" href="style/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <!-- Contenido superior del header -->
+            <div class="header-content">
+                (+51) 953-922-435
+            </div>
+            <div class="logo">
+                <img src="logo.png" alt="Logo Panadería">
+            </div>
+            <div class="header-content right-content">
+                <a href="#"><img src="carrito.png" alt="Carrito de compras"></a>
+            </div>
+        </div>
+          
+            <!-- Buscador -->
+        <div class="encabezado_buscador">
+            <input type="text" id="buscador_input" placeholder="Buscar...">
+            <button type="button" id="buscador_boton">Buscar</button>
+        </div>
+    </header>
+    
+<div id="resultados_buscador">
+    <!-- Aquí se mostrarán los resultados de la búsqueda -->
+</div>
+         <!-- Navegación -->
+         <nav>
+            <ul>
+                <li><a href="#">Conoce nuestras tiendas</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Franquicias</a></li>
+                <li><a href="#">Servicios</a></li>
+            </ul>
+        </nav>
+<!-- Menú de navegación -->
+<nav id="menu-navegacion" class="menu-navegacion">
+    <ul class="nav-menu">
+        <li class="nav-item">
+            <a href="https://ptitefrance.com/catalogo/categoria/panes-dulces">PANES DULCES</a>
+        </li>
+        <li class="nav-item">
+            <a href="https://ptitefrance.com/catalogo/categoria/panes-salados">PANES SALADOS</a>
+            <ul class="submenu">
+                <li><a href="https://ptitefrance.com/catalogo/categoria/panes-salados-pre-cocidos/baguettes-pre-cocidos">BAGUETTES</a></li>
+                <li><a href="https://ptitefrance.com/catalogo/categoria/panes-salados-pre-cocidos/panes-campesinos-pre-cocidos">PANES CAMPESINOS</a></li>
+                <li><a href="https://ptitefrance.com/catalogo/categoria/panes-salados-pre-cocidos/ciabattas-pre-cocidos">CIABATTAS</a></li>
+                <li><a href="https://ptitefrance.com/catalogo/categoria/panes-salados-pre-cocidos/panes-cocidos">PANES COCIDOS</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a href="https://ptitefrance.com/catalogo/categoria/postres-y-pasteles">PASTELERÍA</a>
+            <ul class="submenu">
+                <li><a href="https://ptitefrance.com/catalogo/categoria/postres-y-pasteles/postres">POSTRES</a></li>
+                <li><a href="https://ptitefrance.com/catalogo/categoria/postres-y-pasteles/kekes">KEKES Y TORTAS</a></li>
+                <li><a href="https://ptitefrance.com/catalogo/categoria/postres-y-pasteles/galletas">GALLETAS</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a href="https://ptitefrance.com/catalogo/categoria/snacks">SANDWICHES</a>
+        </li>
+        <li class="nav-item">
+            <a href="https://ptitefrance.com/catalogo/categoria/promo">PACKS</a>
+        </li>
+        <li class="nav-item">
+            <a href="https://ptitefrance.com/catalogo/categoria/trabaja-con-nosotros">TRABAJA CON NOSOTROS</a>
+        </li>       
+    </ul>
+</nav>    
+    </header>
+ <!-- Main -->   
+    <main>
+        <section class="left-container">
+            
+            <h2>CATEGORIAS:</h2>
+            <form action="#">
+                <input type="checkbox" id="pan1" name="pan1" value="pan1">
+                <label for="pan1">Tipo de pan 1</label><br>
+                <input type="checkbox" id="pan2" name="pan2" value="pan2">
+                <label for="pan2">Tipo de pan 2</label><br>
+                <input type="checkbox" id="pan3" name="pan3" value="pan3">
+                <label for="pan3">Tipo de pan 3</label><br>
+                <input type="checkbox" id="pan4" name="pan4" value="pan4">
+                <label for="pan4">Tipo de pan 4</label><br>
+                <input type="checkbox" id="pan5" name="pan5" value="pan5">
+                <label for="pan5">Tipo de pan 5</label><br>
+                <input type="checkbox" id="pan6" name="pan6" value="pan6">
+                <label for="pan6">Tipo de pan 6</label><br>
+            </form>
+        </section>
+        
+        <section class="right-container">
+            <div class="product">
+                <img src="pan1.jpg" alt="Pan 1">
+                <p>Precio: $X.XX</p>
+                <button>Agregar</button>
+                <div class="quantity">
+                    <button>-</button>
+                    <button>+</button>
+                    <input type="text" value="1">
+                </div>
+            </div>
+            <div class="product">
+                <img src="pan2.jpg" alt="Pan 2">
+                <p>Precio: $Y.YY</p>
+                <button>Agregar</button>
+                <div class="quantity">
+                    <button>-</button>
+                    <button>+</button>
+                    <input type="text" value="1">
+                </div>
+            </div>
+            <div class="product">
+                <img src="pan3.jpg" alt="Pan 3">
+                <p>Precio: $Z.ZZ</p>
+                <button>Agregar</button>
+                <div class="quantity">
+                    <button>-</button>
+                    <button>+</button>
+                    <input type="text" value="1">
+                </div>
+            </div>
+        </section>
+    </main>
+    
+ <!-- Footer-->   
+    <footer>
+        <div class="footer-column">
+            <p>Texto.</p>
+            <p>Texto.</p>
+            <p>Texto.</p>
+            <p>Texto.</p>
+            <p>Texto.</p>
+                         
+         
+        </div>
+        <div class="footer-column">
+            <div>
+                <p>Dirección: Calle, Ciudad</p>
+                <p>Teléfono: XXX-XXX-XXXX</p>
+                <div class="redes-sociales">
+                    <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-column">
+            <form action="#">
+                <input type="text" placeholder="Nombre"><br>
+                <input type="email" placeholder="Correo electrónico"><br>
+                <textarea placeholder="Mensaje"></textarea><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>

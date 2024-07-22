@@ -9,10 +9,7 @@
 <body>
     <header>
         <div class="header-top">
-            <!-- Contenido superior del header -->
-            <div class="header-content">
-                (+51) 953-922-435
-            </div>
+            <div class="header-content">(+51) 953-922-435</div>
             <div class="logo">
                 <img src="assets/logo.svg" alt="Logo Panadería">
             </div>
@@ -20,118 +17,71 @@
                 <a href="#"><img src="carrito.png" alt="Carrito de compras"></a>
             </div>
         </div>
-          
-        <!-- Buscador -->
         <div class="encabezado_buscador">
             <input type="text" id="buscador_input" placeholder="Buscar...">
             <button type="button" id="buscador_boton">Buscar</button>
         </div>
+        <nav id="menu-navegacion" class="menu-navegacion">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#pan-dulce">PANES DULCES</a></li>
+                <li class="nav-item"><a href="#pan-salado">PANES SALADOS</a></li>
+                <li class="nav-item"><a href="#pasteleria">PASTELERÍA</a></li>
+                <li class="nav-item"><a href="#sandwiches">SANDWICHES</a></li>
+                <li class="nav-item"><a href="#packs">PACKS</a></li>
+                <li class="nav-item"><a href="#trabaja">TRABAJA CON NOSOTROS</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <div id="resultados_buscador">
-        <!-- Aquí se mostrarán los resultados de la búsqueda -->
-    </div>
-    
-    <!-- Navegación -->
-    <nav>
-        <ul>
-            <li><a href="#">Conoce nuestras tiendas</a></li>
-            <li><a href="#">Sobre nosotros</a></li>
-            <li><a href="#">Franquicias</a></li>
-            <li><a href="#">Servicios</a></li>
-        </ul>
-    </nav>
-
-    <!-- Menú de navegación -->
-    <nav id="menu-navegacion" class="menu-navegacion">
-        <ul class="nav-menu">
-            <li class="nav-item">
-                <a href="">PANES DULCES</a>
-            </li>
-            <li class="nav-item">
-                <a href="">PANES SALADOS</a>
-                <ul class="submenu">
-                    <li><a href="">BAGUETTES</a></li>
-                    <li><a href="">PANES CAMPESINOS</a></li>
-                    <li><a href="">CIABATTAS</a></li>
-                    <li><a href="">PANES COCIDOS</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="">PASTELERÍA</a>
-                <ul class="submenu">
-                    <li><a href="">POSTRES</a></li>
-                    <li><a href="">KEKES Y TORTAS</a></li>
-                    <li><a href="">GALLETAS</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="">SANDWICHES</a>
-            </li>
-            <li class="nav-item">
-                <a href="">PACKS</a>
-            </li>
-            <li class="nav-item">
-                <a href="">TRABAJA CON NOSOTROS</a>
-            </li>       
-        </ul>
-    </nav>
 
     <main>
-        <section class="left-container">
-            <h2>CATEGORIAS:</h2>
-            <form action="#">
-                <input type="checkbox" id="pan1" name="pan1" value="pan1">
-                <label for="pan1">Tipo de pan 1</label><br>
-                <input type="checkbox" id="pan2" name="pan2" value="pan2">
-                <label for="pan2">Tipo de pan 2</label><br>
-                <input type="checkbox" id="pan3" name="pan3" value="pan3">
-                <label for="pan3">Tipo de pan 3</label><br>
-                <input type="checkbox" id="pan4" name="pan4" value="pan4">
-                <label for="pan4">Tipo de pan 4</label><br>
-                <input type="checkbox" id="pan5" name="pan5" value="pan5">
-                <label for="pan5">Tipo de pan 5</label><br>
-                <input type="checkbox" id="pan6" name="pan6" value="pan6">
-                <label for="pan6">Tipo de pan 6</label><br>
-            </form>
+        <section id="pan-dulce" class="product-section">
+            <h2>PANES DULCES</h2>
+            <div class="product">
+                <img src="pan1.jpg" alt="Pan 1">
+                <p>Precio: $X.XX</p>
+                <button>Agregar</button>
+                <div class="quantity">
+                    <button>-</button>
+                    <button>+</button>
+                    <input type="text" value="1">
+                </div>
+            </div>
+            <div class="product">
+                <img src="pan2.jpg" alt="Pan 2">
+                <p>Precio: $Y.YY</p>
+                <button>Agregar</button>
+                <div class="quantity">
+                    <button>-</button>
+                    <button>+</button>
+                    <input type="text" value="1">
+                </div>
+            </div>
+            <div class="product">
+                <img src="pan3.jpg" alt="Pan 3">
+                <p>Precio: $Z.ZZ</p>
+                <button>Agregar</button>
+                <div class="quantity">
+                    <button>-</button>
+                    <button>+</button>
+                    <input type="text" value="1">
+                </div>
+            </div>
         </section>
-        
-        <section class="right-container">
-            <h2>Tipo de pan 1</h2>
-            <div class="product">
-                <img src="pan1.jpg" alt="Pan 1">
-                <p>Precio: $X.XX</p>
-                <button>Agregar</button>
-                <div class="quantity">
-                    <button>-</button>
-                    <button>+</button>
-                    <input type="text" value="1">
-                </div>
-            </div>
-            <div class="product">
-                <img src="pan1.jpg" alt="Pan 1">
-                <p>Precio: $X.XX</p>
-                <button>Agregar</button>
-                <div class="quantity">
-                    <button>-</button>
-                    <button>+</button>
-                    <input type="text" value="1">
-                </div>
-            </div>
-            <div class="product">
-                <img src="pan1.jpg" alt="Pan 1">
-                <p>Precio: $X.XX</p>
-                <button>Agregar</button>
-                <div class="quantity">
-                    <button>-</button>
-                    <button>+</button>
-                    <input type="text" value="1">
-                </div>
-            </div>
 
-            <h2>Tipo de pan 2</h2>
+        <section id="pan-salado" class="product-section">
+            <h2>PANES SALADOS</h2>
             <div class="product">
-                <img src="pan2.jpg" alt="Pan 2">
+                <img src="pan4.jpg" alt="Pan 4">
+                <p>Precio: $X.XX</p>
+                <button>Agregar</button>
+                <div class="quantity">
+                    <button>-</button>
+                    <button>+</button>
+                    <input type="text" value="1">
+                </div>
+            </div>
+            <div class="product">
+                <img src="pan5.jpg" alt="Pan 5">
                 <p>Precio: $Y.YY</p>
                 <button>Agregar</button>
                 <div class="quantity">
@@ -141,29 +91,7 @@
                 </div>
             </div>
             <div class="product">
-                <img src="pan2.jpg" alt="Pan 2">
-                <p>Precio: $Y.YY</p>
-                <button>Agregar</button>
-                <div class="quantity">
-                    <button>-</button>
-                    <button>+</button>
-                    <input type="text" value="1">
-                </div>
-            </div>
-            <div class="product">
-                <img src="pan2.jpg" alt="Pan 2">
-                <p>Precio: $Y.YY</p>
-                <button>Agregar</button>
-                <div class="quantity">
-                    <button>-</button>
-                    <button>+</button>
-                    <input type="text" value="1">
-                </div>
-            </div>
-
-            <h2>Tipo de pan 3</h2>
-            <div class="product">
-                <img src="pan3.jpg" alt="Pan 3">
+                <img src="pan6.jpg" alt="Pan 6">
                 <p>Precio: $Z.ZZ</p>
                 <button>Agregar</button>
                 <div class="quantity">
@@ -172,9 +100,13 @@
                     <input type="text" value="1">
                 </div>
             </div>
+        </section>
+
+        <section id="pasteleria" class="product-section">
+            <h2>PASTELERÍA</h2>
             <div class="product">
-                <img src="pan3.jpg" alt="Pan 3">
-                <p>Precio: $Z.ZZ</p>
+                <img src="pastel1.jpg" alt="Pastel 1">
+                <p>Precio: $X.XX</p>
                 <button>Agregar</button>
                 <div class="quantity">
                     <button>-</button>
@@ -183,7 +115,51 @@
                 </div>
             </div>
             <div class="product">
-                <img src="pan3.jpg" alt="Pan 3">
+                <img src="pastel2.jpg" alt="Pastel 2">
+                <p>Precio: $Y.YY</p>
+                <button>Agregar</button>
+                <div class="quantity">
+                    <button>-</button>
+                    <button>+</button>
+                    <input type="text" value="1">
+                </div>
+            </div>
+            <div class="product">
+                <img src="pastel3.jpg" alt="Pastel 3">
+                <p>Precio: $Z.ZZ</p>
+                <button>Agregar</button>
+                <div class="quantity">
+                    <button>-</button>
+                    <button>+</button>
+                    <input type="text" value="1">
+                </div>
+            </div>
+        </section>
+
+        <section id="sandwiches" class="product-section">
+            <h2>SANDWICHES</h2>
+            <div class="product">
+                <img src="sandwich1.jpg" alt="Sandwich 1">
+                <p>Precio: $X.XX</p>
+                <button>Agregar</button>
+                <div class="quantity">
+                    <button>-</button>
+                    <button>+</button>
+                    <input type="text" value="1">
+                </div>
+            </div>
+            <div class="product">
+                <img src="sandwich2.jpg" alt="Sandwich 2">
+                <p>Precio: $Y.YY</p>
+                <button>Agregar</button>
+                <div class="quantity">
+                    <button>-</button>
+                    <button>+</button>
+                    <input type="text" value="1">
+                </div>
+            </div>
+            <div class="product">
+                <img src="sandwich3.jpg" alt="Sandwich 3">
                 <p>Precio: $Z.ZZ</p>
                 <button>Agregar</button>
                 <div class="quantity">
@@ -194,7 +170,7 @@
             </div>
         </section>
     </main>
-    
+
     <footer>
         <div class="footer-column">
             <p>Texto.</p>
@@ -224,4 +200,4 @@
         </div>
     </footer>
 </body>
-            </html>
+</html>

@@ -17,7 +17,7 @@ header {
 
 .header-content, .right-content {
     display: flex;
-    align-items: right;
+    align-items: center;
 }
 
 .header-top {
@@ -31,7 +31,6 @@ header {
 .logo {
     margin-top: 10px;
     text-align: center;
-    margin-bottom: 10px;
 }
 
 .menu-navegacion {
@@ -65,7 +64,7 @@ header {
 }
 
 .nav-item a:hover {
-    color: #ff6600;
+    color: #ff6600; 
 }
 
 .submenu {
@@ -86,7 +85,7 @@ header {
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     background-color: #f5f5dc;
 }
 
@@ -135,26 +134,21 @@ nav a {
 /* Estilos para el main */
 main {
     display: flex;
-    flex-direction: column; /* Ajuste para diseño responsive */
-    margin: 0 auto;
-    padding: 20px;
-    background-color: aliceblue;
-    max-width: 1200px;
-    min-height: calc(100vh - 100px);
-}
-
-.left-container {
-    flex: 1;
-    margin-bottom: 20px; /* Ajuste para diseño responsive */
-}
-
-h2, label {
-    font-size: 20px;
-}
-
-.right-container {
-    display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-color: aliceblue;
+}
+
+.product-section {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 40px;
+}
+
+.product-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .product {
@@ -165,43 +159,59 @@ h2, label {
 }
 
 .product img {
-    max-width: 100%;
-    height: auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
 .product p {
-    font-size: 16px;
-    margin: 10px 0;
+    margin: 5px 0;
+}
+
+.product button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .product .quantity {
     display: flex;
     align-items: center;
+    margin-top: 10px;
 }
 
-.quantity button {
-    padding: 5px 10px;
-    font-size: 16px;
-    margin: 0 5px;
+.product .quantity button {
+    padding: 4px 8px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    cursor: pointer;
 }
 
-.quantity input {
+.product .quantity input {
     width: 40px;
     text-align: center;
+    border: 1px solid #ccc;
+    margin: 0 5px;
 }
 
 /* Estilos para el footer */
 footer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(135, 140, 145);
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 20px;
+    background-color: rgb(135, 140, 145);
 }
 
 .footer-column {
+    flex: 1;
+    min-width: 200px;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
 }
 
 .redes-sociales img {
@@ -209,42 +219,42 @@ footer {
     margin-right: 10px;
 }
 
-/* Estilos Responsive */
-@media (min-width: 768px) {
-    .header-top {
-        flex-direction: row;
-    }
-    
-    .menu-navegacion, .nav-menu {
-        flex-direction: row;
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .header-top, .menu-navegacion, .product-section, .footer-column {
+        flex-direction: column;
+        align-items: center;
     }
 
-    main {
-        flex-direction: row;
-        justify-content: space-between;
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .left-container {
-        margin-left: 50px;
+    .nav-item {
+        margin-bottom: 10px;
     }
 
-    .right-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+    .nav-item:last-child {
+        margin-bottom: 0;
     }
 
     .product {
-        margin-right: 60px;
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
     }
 
-    .product:last-child {
-        margin-right: 0;
+    .product img {
+        width: 100%;
+        height: auto;
     }
 
-    footer {
-        flex-direction: row;
-        justify-content: space-between;
+    .quantity {
+        flex-direction: column;
+    }
+
+    .quantity input {
+        margin-bottom: 5px;
     }
 }
